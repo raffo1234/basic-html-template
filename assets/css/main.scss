@@ -1,0 +1,310 @@
+// RESET
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+html,
+body,
+div,
+span,
+a,
+img,
+h1,
+h2,
+p,
+ul,
+li {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: 300;
+  line-height: inherit;
+  list-style: none;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-decoration: none;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  color: #333333;
+  text-rendering: optimizeLegibility!important;
+  -webkit-font-smoothing: antialiased!important;
+  -moz-osx-font-smoothing: grayscale!important;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+::-webkit-input-placeholder {
+  color: #b9b9b9;
+  font-size: inherit;
+  line-height: 1.8;
+}
+
+:-moz-placeholder {
+  color: #b9b9b9;
+  font-size: inherit;
+  line-height: 1.8;
+}
+
+::-moz-placeholder {
+  color: #b9b9b9;
+  font-size: inherit;
+  line-height: 1.8;
+}
+
+:-ms-input-placeholder {
+  color: #b9b9b9;
+  font-size: inherit;
+  line-height: 1.8;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  background: #f3f3f3;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 8px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f3f3f3;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d9d9de;
+  -webkit-transition: background .5s;
+  -moz-transition: background .5s;
+  -ms-transition: background .5s;
+  transition: background .5s;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+:link,
+:hover,
+:active,
+:focus,
+:visited {
+  outline: 0;
+}
+
+a[href^=tel] {
+  color: inherit;
+  text-decoration: none;
+}
+
+h2,
+h3 {
+  font-weight: 300;
+}
+
+input {
+  -webkit-user-select: auto;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+small {
+  color: white;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1em;
+}
+
+// GENERAL
+
+.font-size-medium{
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.42em;
+}
+
+.display-inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.table {
+  width: 100%;
+  display: table;
+}
+
+.table-cell {
+  display: table-cell;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+// container
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.container-medium {
+  max-width: 860px;
+}
+
+// main
+.portada {
+  padding-top: 65px;
+}
+
+.portada img {
+  display: block;
+  width: 100%;
+}
+
+// features
+.features {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.feature-item {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  width: 100%;
+  max-width: 768px;
+}
+
+@media screen and (min-width: 960px) {
+  .feature-item {
+    width: 33.33333334%;
+  }
+}
+
+.feature-item .inner{
+  border: 2px solid #f2f2f2;
+  display: inline-block;
+  padding: 40px 30px;
+  text-align: center;
+  @include border-radius(3px);
+}
+
+.feature-item svg {
+  margin-bottom: 30px;
+}
+
+.feature-item svg path{
+  fill: $color-base;
+}
+
+.feature-item h2 {
+  color: #548;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.feature-item h3 {
+  margin-bottom: 15px;
+  color: lighten($color-base, 3%);
+  font-size: 1.4em;
+  font-weight: 300;
+}
+
+.feature-item p {
+  font-size: 17px;
+  margin-bottom: 35px;
+}
+
+.form-contact {
+  padding: 50px 0;
+}
+
+.input-row {
+  margin-bottom: 30px;
+}
+
+.input {
+  font-size: 1em;
+  display: block;
+  border: 1px solid #f6f6f6;
+  padding: 15px 15px;
+  width: 100%;
+  @include border-radius(3px);
+  @include transition(border-color $time);
+  &:focus{
+    border-color: #333;
+  }
+}
+
+
+// page header
+.page-header {
+  background-color: $color-base;
+  color: #fff;
+  font-style: italic;
+  font-size: 1.4em;
+  padding: 165px 0 100px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    font-size: 2em;
+  }
+}
+
+.intro {
+  border: 1px solid #f2f2f2;
+  margin-top: 30px;
+  padding: 30px;
+  @include border-radius(3px);
+}
+
+
+// footer
+footer{
+  background-color: $color-base;
+  color: #fff;
+  font-size: 0.8em;
+  margin-top: 100px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+

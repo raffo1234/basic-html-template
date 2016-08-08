@@ -1,0 +1,18 @@
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  min-width: 130px;
+  color: $red;
+  cursor: pointer;
+  border: 1px solid $red;
+  background-color: #fff;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1em;
+  @include border-radius(3px);
+  @include transition(background-color $time, color $time);
+  &:hover {
+    background-color: $red;
+    color: #fff;
+  }
+}

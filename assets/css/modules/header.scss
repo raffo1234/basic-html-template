@@ -1,0 +1,25 @@
+header {
+  background-color: $color-base;
+  left: 0;
+  padding: 0 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  color: #fff;
+}
+
+nav {}
+
+nav a {
+  color: #fff;
+  font-size: 0.8em;
+  display: inline-block;
+  padding: 25px 15px;
+  @include transition(background-color 0.55s);
+  &:hover, &.is-actived {
+    background-color: darken($color-base, 5%);
+  }
+}
