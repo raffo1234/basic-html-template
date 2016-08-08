@@ -2,9 +2,9 @@
   display: inline-block;
   padding: 14px 30px;
   min-width: 130px;
-  color: $red;
+  color: $color-button;
   cursor: pointer;
-  border: 1px solid $red;
+  border: 1px solid $color-button;
   background-color: #fff;
   font-size: 1em;
   font-weight: 600;
@@ -12,7 +12,7 @@
   @include border-radius(3px);
   @include transition(background-color $time, color $time);
   &:hover {
-    background-color: $red;
+    background-color: $color-button;
     color: #fff;
   }
 }
