@@ -3,7 +3,7 @@ BASIC HTML TEMPLATE
 
 
 ----------------------
-Command Line Arguments
+Instructions
 ----------------------
 
 npm install
