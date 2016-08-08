@@ -12,7 +12,8 @@ gulp
 Variables
 ---------
 assets/css/base/variables.scss
-
+```css
 $color-base: #382c63;
 
 $color-button: #e14329;
+```
