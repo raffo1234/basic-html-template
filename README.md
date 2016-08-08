@@ -3,11 +3,11 @@ BASIC HTML TEMPLATE
 
 Instructions
 ----------------------
-
+```{r, engine='bash', count_lines}
 npm install
 
 gulp
-
+```
 
 Variables
 ---------
